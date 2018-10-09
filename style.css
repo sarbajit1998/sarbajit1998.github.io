@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    scroll-behavior: smooth;
+}
+  
+body::-webkit-scrollbar {
+    width: 0.3em;
+    height: 0.4em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkred;
+  outline: 0.1px solid red;
+  border-radius: 40px;
+  background-image: -webkit-linear-gradient(50deg,rgba(255, 255, 255, .1) 25%,
+                                              transparent 25%,
+                                              transparent 50%,
+                                              rgba(255, 255, 255, .1) 50%,
+                                              rgba(255, 255, 255, .1) 75%,
+                                              transparent 75%,
+                                              transparent)
+
+}
+#head {
+        width: 1360px;
+        height: 40px;
+}
+#head .logo{
+   
+    font-size: 5em;
+    letter-spacing: 3px;    
+    text-align: center;
+    color: black;
+    font-family: serif;
+    cursor: pointer;
+    font-weight: bolder; 
+    line-height: 30px;
+}
+.logo img {
+     margin: 0px auto;
+    height: 8%;
+    width: 12%;
+
+}
+.button1 a{
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 8px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        float: left;
+        font-size: 20px;
+        margin: 2px 2px;
+        cursor: pointer;
+        font-family: fantasy;
+        word-spacing: 8px;
+        box-shadow: 0,5;
+        border-radius: 6px;
+}
+.button1 a:hover {
+    background-color: darkorchid;
+    border-bottom: 4px solid darkblue;
+}
+.button2 a{
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 8px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        float: right;
+        font-size: 20px;
+        margin: 2px 2px;
+        cursor: pointer;
+        font-family: fantasy;
+        word-spacing: 8px;
+        border-radius: 6px;
+}
+.button2 a:hover {
+    background-color: darkorchid;
+    border-bottom: 4px solid darkblue;
+}
+
+
+//index page
+#header {
+  	    margin: 0 auto;
+        border: 1px solid block;
+}
+#header .welcome{
+	text-align: center;
+	padding-top: 20px;
+	color: black;
+	font-size: 8em ;
+	text-shadow: 0px 4px 10px ;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: bold;
+    animation: text 6s 1;
+    word-spacing: 25px;
+}
+.enter{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 30px;
+	color: red;
+	font-family: serif;
+}
+.button {
+	text-align: center;
+	padding-top: 60px;
+	box-shadow: 20px;
+}
+.button a{
+
+    	background-color: blue;
+    	border: none;
+    	color: black;
+    	padding: 10px 28px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 30px;
+    	margin: 4px 2px;
+    	cursor: pointer;
+    	border-radius: 6px;
+    	font-family: 'Satisfy',cursive;
+}
+.button a:hover {
+    background-color: darkorchid;
+    border-bottom: 4px solid lime;
+}
+.myimage{
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.myimage img {
+    width: 180px;
+    height: 190px;
+    border-radius: 30px;
+    position: all;
+}
+.intro {
+    color: black;
+    text-align: center;
+    font-family: 'Chela One', cursive;
+    line-height: 40px;
+    font-size: 20px;
+}
+#link .icons-f img{
+    width: 4%;
+    height: 7%;
+     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#link .icons-i img{
+    width: 4.5%;
+    height: 7%;
+     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.copyright{
+	color: olive;
+	padding-top: 40px;
+	text-align: center;
+	font-size: 1em;
+    font-weight: bold;
+
+}
+//home page
+.hello{
+	text-align: center;
+	color: darkblue;
+	font-size: 80px;
+	font-weight: bold;
+	padding-top: 80px;
+    
+}
+.nav-bar a{
+	text-decoration: none;
+	font-size: 20px;
+}
+.copyright1{
+	color: black;
+    font-weight: bold;
+	padding-top: 900px;
+	padding-left: 270px;
+	font-size: 1em;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@keyframes text {
+    0% {
+        color: violet;
+        margin-bottom: -20px;
+    }
+    30% {
+        letter-spacing: 25px;
+        margin-bottom:  -20px;
+    }
+   
+    
+    80% {
+        letter-spacing: 3px;
+        margin-bottom: -20px;
+    
+    }
+   
+
+
+}
+body{
+    background-color: lightblue;
+    -webkit-animation-name: back; 
+    -webkit-animation-duration: 4s; 
+    animation-name: back;
+    animation-duration: 4s;
+}
+
+
+@-webkit-keyframes back {
+    from {background-color: lightblue;}
+    to {background-color:skyblue ;}
+}
+
+@keyframes back {
+    from {background-color: lightblue;}
+    to {background-color: skyblue;}
+}
